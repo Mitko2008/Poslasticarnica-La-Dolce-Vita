@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt — La Dolce Vita</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">La <span>Dolce</span> Vita</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Početna</a></li>
+    <li><a href="o-nama.html">O nama</a></li>
+    <li><a href="meni.html">Meni</a></li>
+    <li><a href="galerija.html">Galerija</a></li>
+    <li><a href="posebne-prilike.html">Specijalne prilike</a></li>
+    <li><a href="kontakt.html" class="nav-cta">Kontakt</a></li>
+  </ul>
+  <button class="hamburger"><span></span><span></span><span></span></button>
+</nav>
+
+<main>
+  <div class="page-hero">
+    <div class="page-hero-content container">
+      <span class="page-hero-label">Pišite nam</span>
+      <h1 class="page-hero-title">Kontakt</h1>
+      <p class="page-hero-subtitle">Uvijek smo tu da odgovorimo na vaša pitanja i primimo vaše narudžbine.</p>
+    </div>
+  </div>
+  <div class="breadcrumb"><div class="container"><ul class="breadcrumb-list"><li><a href="index.html">Početna</a></li><li><span class="sep">/</span></li><li><span>Kontakt</span></li></ul></div></div>
+
+  <!-- CONTACT MAIN -->
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Info -->
+        <div>
+          <span class="section-label">Gdje nas možete pronaći</span>
+          <h2 class="section-title">Posjetite nas <em>ili pišite</em></h2>
+          <div class="divider"></div>
+
+          <div class="contact-info-block">
+            <div class="contact-info-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h4>Adresa</h4>
+                <p>Desanke Maksimović 8G<br>11000 Beograd, Republika Srbija</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <h4>Telefon</h4>
+                <a href="tel:+38733123456">+381 33 123 456</a><br>
+                <a href="tel:+38761987654">+381 61 987 654</a> <span style="font-size:0.82rem; color:var(--mid-gray);">(viber/whatsapp)</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <h4>E-pošta</h4>
+                <a href="mailto:info@ladolcevita.ba">info@ladolcevita.rs</a><br>
+                <a href="mailto:narudzbe@ladolcevita.ba">narudzbe@ladolcevita.rs</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon">📸</div>
+              <div>
+                <h4>Pratite nas</h4>
+                <p>
+                  <a href="#" style="color: var(--rose);">@ladolcevita.rs</a> na Instagramu<br>
+                  <a href="#" style="color: var(--rose);">La Dolce Vita Beograd</a> na Facebooku
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form">
+          <h3 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--chocolate); margin-bottom: 8px;">Pošaljite poruku</h3>
+          <p style="font-size: 0.9rem; color: var(--text-mid); margin-bottom: 32px;">Odgovaramo u roku od 24 sata radnim danima.</p>
+
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="ime">Ime i prezime</label>
+                <input type="text" id="ime" name="ime" placeholder="Vaše ime" required />
+              </div>
+              <div class="form-group">
+                <label for="tel">Telefon</label>
+                <input type="tel" id="tel" name="tel" placeholder="+381 ..." />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-pošta</label>
+              <input type="email" id="email" name="email" placeholder="vas@email.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="usluga">Vrsta upita</label>
+              <select id="usluga" name="usluga">
+                <option value="">Odaberite...</option>
+                <option value="narudzba">Narudžbina torte</option>
+                <option value="vjenčanje">Torta za venčanje</option>
+                <option value="korporativno">Korporativna narudžbina</option>
+                <option value="slatki-sto">Slatki sto</option>
+                <option value="pitanje">Opšte pitanje</option>
+                <option value="ostalo">Ostalo</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="datum">Datum (ako je relevantno)</label>
+                <input type="date" id="datum" name="datum" />
+              </div>
+              <div class="form-group">
+                <label for="osobe">Broj osoba (za narudžbine)</label>
+                <input type="number" id="osobe" name="osobe" placeholder="npr. 30" min="1" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="poruka">Poruka</label>
+              <textarea id="poruka" name="poruka" placeholder="Opišite šta vam treba — ukus, dizajn, tema, budžet..." rows="5"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 16px;">
+              Pošalji poruku
+            </button>
+
+            <div id="form-alert" class="alert alert-success">
+              ✅ Hvala! Poruka je uspješno poslata. Kontaktirat ćemo vas uskoro.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKING HOURS -->
+  <section style="background: var(--soft-gray);">
+    <div class="container">
+      <span class="section-label">Kada nas možete pronaći</span>
+      <h2 class="section-title">Radno <em>vreme</em></h2>
+      <div class="divider"></div>
+      <p class="section-subtitle">Sveža peciva dostupna od ranog jutra. Preporučujemo dolazak do 10h za najbolju ponudu.</p>
+
+      <div class="hours-grid">
+        <div class="hours-card" data-day="ponedjeljak">
+          <span class="hours-day">Ponedjeljak</span>
+          <span class="hours-time">07:00 – 20:00</span>
+        </div>
+        <div class="hours-card" data-day="utorak">
+          <span class="hours-day">Utorak</span>
+          <span class="hours-time">07:00 – 20:00</span>
+        </div>
+        <div class="hours-card" data-day="srijeda">
+          <span class="hours-day">Srijeda</span>
+          <span class="hours-time">07:00 – 20:00</span>
+        </div>
+        <div class="hours-card" data-day="četvrtak">
+          <span class="hours-day">Četvrtak</span>
+          <span class="hours-time">07:00 – 20:00</span>
+        </div>
+        <div class="hours-card" data-day="petak">
+          <span class="hours-day">Petak</span>
+          <span class="hours-time">07:00 – 21:00</span>
+        </div>
+        <div class="hours-card" data-day="subota">
+          <span class="hours-day">Subota</span>
+          <span class="hours-time">08:00 – 20:00</span>
+        </div>
+        <div class="hours-card" data-day="nedjelja">
+          <span class="hours-day">Nedjelja</span>
+          <span class="hours-time">08:00 – 15:00</span>
+        </div>
+      </div>
+
+      <p style="margin-top: 20px; font-size: 0.85rem; color: var(--mid-gray);">
+        * Zatvoreni smo na državne praznike. Pratite naš Instagram za obaveštenja o izmeni radnog vremena.
+      </p>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section>
+    <div class="container">
+      <span class="section-label">Lokacija</span>
+      <h2 class="section-title">Pronađi <em>nas</em></h2>
+      <div class="divider"></div>
+
+     
+      <div style="width: 100%; height: 420px; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid rgba(200,113,90,0.15); margin-top: 40px;">
+        <iframe
+          width="100%"
+          height="100%"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=20.45%2C44.79%2C20.48%2C44.81&layer=mapnik&marker=44.8015%2C20.4650"
+          title="Karta lokacije La Dolce Vita"
+          style="border: 0;"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p style="margin-top: 12px; font-size: 0.88rem; color: var(--mid-gray);">
+        📍 Desanke Maksimović 8G, 11000 Beograd —
+        <a href="https://www.openstreetmap.org/?mlat=44.8015&mlon=20.4650#map=16/44.8015/20.4650" target="_blank" rel="noopener" style="color: var(--rose);">Otvori u punoj veličini →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section style="background: var(--soft-gray);">
+    <div class="container">
+      <span class="section-label">Česta pitanja</span>
+      <h2 class="section-title">Imate <em>pitanje?</em></h2>
+      <div class="divider"></div>
+
+      <div style="max-width: 760px; margin-top: 40px; display: flex; flex-direction: column; gap: 20px;">
+        <div style="background: var(--warm-white); border: 1px solid rgba(200,113,90,0.15); border-radius: var(--radius); padding: 24px 28px;">
+          <h4 style="font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--chocolate); margin-bottom: 10px;">Koliko unapred trebam da naručim tortu?</h4>
+          <p style="font-size: 0.92rem; color: var(--text-mid); line-height: 1.7;">Za standardne torte, 3–5 dana. Za posebne narudžbe i torte za venčanja, preporučujemo najmanje 2–4 nedelje unapred, posebno u sezoni (maj–septembar).</p>
+        </div>
+        <div style="background: var(--warm-white); border: 1px solid rgba(200,113,90,0.15); border-radius: var(--radius); padding: 24px 28px;">
+          <h4 style="font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--chocolate); margin-bottom: 10px;">Dostavljate li torte?</h4>
+          <p style="font-size: 0.92rem; color: var(--text-mid); line-height: 1.7;">Da, dostavljamo po Srbiji. Cena dostave zavisi od udaljenosti. Za veće narudžbine dostava je besplatna unutar grada.</p>
+        </div>
+        <div style="background: var(--warm-white); border: 1px solid rgba(200,113,90,0.15); border-radius: var(--radius); padding: 24px 28px;">
+          <h4 style="font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--chocolate); margin-bottom: 10px;">Radite li bez glutena i laktoze?</h4>
+          <p style="font-size: 0.92rem; color: var(--text-mid); line-height: 1.7;">Imamo ograničenu ponudu bezglutenskih i bez-laktoznih alternativa. Kontaktirajte nas za detalje i dostupnost — trudimo se izaći u susret svima.</p>
+        </div>
+        <div style="background: var(--warm-white); border: 1px solid rgba(200,113,90,0.15); border-radius: var(--radius); padding: 24px 28px;">
+          <h4 style="font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--chocolate); margin-bottom: 10px;">Mogu li doneti svoju fotografiju za dizajn torte?</h4>
+          <p style="font-size: 0.92rem; color: var(--text-mid); line-height: 1.7;">Naravno! Inspiracija je dobrodošla. Naši cake artististi pažljivo pregledaju sve vaše predloge i daju procenu, izvodljivosti i cenu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-brand-logo">La <span>Dolce</span> Vita</div><p class="footer-brand-desc">Ručno rađene poslastice s ljubavlju od 1998.</p></div>
+      <div><h5>Stranice</h5><ul class="footer-links"><li><a href="index.html">Početna</a></li><li><a href="o-nama.html">O nama</a></li><li><a href="meni.html">Meni</a></li><li><a href="galerija.html">Galerija</a></li></ul></div>
+      <div><h5>Kontakt</h5><ul class="footer-links"><li><a href="#">📍 Desanke Maksimović 8G</a></li><li><a href="tel:+38733123456">📞 +387 33 123 456</a></li><li><a href="mailto:info@ladolcevita.ba">✉ info@ladolcevita.rs</a></li></ul></div>
+      <div><h5>Radno vrijeme</h5><ul class="footer-links"><li><a href="#">Pon–Sub: 07:00–20:00</a></li><li><a href="#">Nedjelja: 08:00–15:00</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2024 La Dolce Vita.</span><span>Napravljeno s ❤</span></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

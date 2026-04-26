@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galerija — La Dolce Vita</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery-masonry {
+      columns: 3;
+      column-gap: 16px;
+    }
+    .gallery-masonry .gallery-item {
+      break-inside: avoid;
+      margin-bottom: 16px;
+      display: block;
+    }
+    @media (max-width: 900px) { .gallery-masonry { columns: 2; } }
+    @media (max-width: 480px) { .gallery-masonry { columns: 1; } }
+    .gallery-masonry .gallery-item img { min-height: unset; height: auto; }
+    .gallery-item { transition: opacity 0.3s, transform 0.3s; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">La <span>Dolce</span> Vita</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Početna</a></li>
+    <li><a href="o-nama.html">O nama</a></li>
+    <li><a href="meni.html">Meni</a></li>
+    <li><a href="galerija.html">Galerija</a></li>
+    <li><a href="posebne-prilike.html">Specijalne prilike</a></li>
+    <li><a href="kontakt.html" class="nav-cta">Kontakt</a></li>
+  </ul>
+  <button class="hamburger"><span></span><span></span><span></span></button>
+</nav>
+
+<main>
+  <div class="page-hero">
+    <div class="page-hero-content container">
+      <span class="page-hero-label">Naša djela</span>
+      <h1 class="page-hero-title">Galerija</h1>
+      <p class="page-hero-subtitle">Svaka slika krije priču o strasti, detaljima i slatkim trenucima.</p>
+    </div>
+  </div>
+  <div class="breadcrumb"><div class="container"><ul class="breadcrumb-list"><li><a href="index.html">Početna</a></li><li><span class="sep">/</span></li><li><span>Galerija</span></li></ul></div></div>
+
+  <section>
+    <div class="container">
+
+     
+
+      <!-- Masonry Gallery -->
+      <div class="gallery-masonry">
+
+        <div class="gallery-item" data-cat="vjenčanje">
+          <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&q=80" alt="" />
+          </div>
+
+        <div class="gallery-item" data-cat="torte">
+          <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=600&q=80" alt="Sacher torta" />
+         
+        </div>
+
+        <div class="gallery-item" data-cat="kolači">
+          <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600&q=80" alt="Macarons asortiman" />
+         
+        </div>
+
+        <div class="gallery-item" data-cat="peciva">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=80" alt="Svježi kroasani" />
+          
+        </div>
+
+        <div class="gallery-item" data-cat="torte">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80" alt="Čokoladna torta ukrašena" />
+          
+        </div>
+
+        <div class="gallery-item" data-cat="vjenčanje">
+          <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=600&q=80" alt="Višeslojna svadbena torta" />
+          
+        </div>
+
+        <div class="gallery-item" data-cat="čokolada">
+          <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&q=80" alt="Praline i trüfli" />
+          
+        </div>
+
+        <div class="gallery-item" data-cat="torte">
+          <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80" alt="New York cheesecake" />
+          
+        </div>
+
+        <div class="gallery-item" data-cat="peciva">
+          <img src="https://images.unsplash.com/photo-1509461399763-ae67a981b254?w=600&q=80" alt="Peciva asortiman" />
+     
+        </div>
+
+        <div class="gallery-item" data-cat="kolači">
+          <img src="https://plus.unsplash.com/premium_photo-1690214491960-d447e38d0bd0?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Beze s kremom" />
+         
+        </div>
+
+        <div class="gallery-item" data-cat="torte">
+          <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=600&q=80" alt="Umjetnička torta" />
+         
+        </div>
+
+        <div class="gallery-item" data-cat="čokolada">
+          <img src="https://images.unsplash.com/photo-1616690710400-a16d146927c5?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Čokoladni detalji" />
+          
+        </div>
+
+        <div class="gallery-item" data-cat="vjenčanje">
+          <img src="https://plus.unsplash.com/premium_photo-1715015439764-1e8d37d5c6c9?q=80&w=776&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Detalji ukrašavanja" />
+          
+        </div>
+
+        <div class="gallery-item" data-cat="peciva">
+          <img src="https://images.unsplash.com/photo-1514056052883-d017fddd0426?q=80&w=806&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cinnamon rolls" />
+          
+        </div>
+
+        <div class="gallery-item" data-cat="kolači">
+          <img src="https://images.unsplash.com/photo-1560008581-09826d1de69e?w=600&q=80" alt="Kolači asortiman" />
+         
+        </div>
+
+         <div class="gallery-item" data-cat=".">
+          <img src="https://images.unsplash.com/photo-1686207854950-04de42e17897?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="." />
+          
+        </div>
+
+         <div class="gallery-item" data-cat=".">
+          <img src="https://plus.unsplash.com/premium_photo-1720070416636-0e5ef67d3862?q=80&w=772&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="." />
+          
+        </div>
+        <div class="gallery-item" data-cat=".">
+          <img src="https://plus.unsplash.com/premium_photo-1713447395823-2e0b40b75a89?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="." />
+          
+        </div>
+        <div class="gallery-item" data-cat=".">
+          <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?q=80&w=1006&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="." />
+          
+        </div>
+        <div class="gallery-item" data-cat=".">
+          <img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="." />
+          
+        </div>
+        <div class="gallery-item" data-cat=".">
+          <img src="https://images.unsplash.com/photo-1531594652722-292a43e752b4?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="." />
+          
+        </div>
+        <div class="gallery-item" data-cat=".">
+          <img src="https://images.unsplash.com/photo-1565498253128-c06e0488ddee?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="." />
+          
+        </div>
+        
+        
+        
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-label="Prikaz slike">
+    <button id="lightbox-close" class="lightbox-close" aria-label="Zatvori">✕</button>
+    <img id="lightbox-img" src="" alt="" />
+  </div>
+
+  <div class="cta-banner">
+    <div class="container">
+      <h2 class="section-title">Vaša priča, <em style="color:var(--caramel)">naša torta</em></h2>
+      <p class="section-subtitle">Svaka fotografija je bila nečija posebna želja. Neka sljedeća bude baš vaša.</p>
+      <a href="kontakt.html" class="btn" style="background:white; color:var(--rose); margin-top:8px;">Naruči po želji</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-brand-logo">La <span>Dolce</span> Vita</div><p class="footer-brand-desc">Ručno rađene poslastice s ljubavlju od 1998.</p></div>
+      <div><h5>Stranice</h5><ul class="footer-links"><li><a href="index.html">Početna</a></li><li><a href="o-nama.html">O nama</a></li><li><a href="meni.html">Meni</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div>
+      <div><h5>Kontakt</h5><ul class="footer-links"><li><a href="#">📍 Desanke Maksimović 8G</a></li><li><a href="tel:+38733123456">📞 +381 33 123 456</a></li></ul></div>
+      <div><h5>Radno vrijeme</h5><ul class="footer-links"><li><a href="#">Pon–Sub: 07:00–20:00</a></li><li><a href="#">Nedjelja: 08:00–15:00</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2024 La Dolce Vita.</span><span>Napravljeno s ❤</span></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
